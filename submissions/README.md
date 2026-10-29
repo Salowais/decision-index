@@ -1,0 +1,5 @@
+# Model submissions
+
+| Model | Model repository | Complete results | Engine / commit | Hardware | Inference settings | Decision Index | Checks |
+|---|---|---|---|---|---|---|---|
+| Saif 4B | [GyrTechnology/saif-4b](https://huggingface.co/GyrTechnology/saif-4b/tree/622e4c8e483a265abb1a9907bd3a3e142e2672ef) | [Complete results](https://huggingface.co/datasets/GyrTechnology/decision-index-results/blob/6570723ac2174b40e7b22d3b25058b87307cea35/runs/saif-4b/scores.json) | `decision_index_engine:SaifEngine`; engine sha256 `f8be6f9e69bd96e9bbc90768e71146099379e98366b739e27a7d19bb2d7846d6`; [all file sha256s](https://huggingface.co/datasets/GyrTechnology/decision-index-results/blob/6570723ac2174b40e7b22d3b25058b87307cea35/runs/saif-4b/release-provenance.json); kit `25c6ec7b6b5f44a216c63c3a700de3a9c6d6699d` | 1 x NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition | Released merged decision-only model; bf16 decoder/fp32 head; K=1; batch=1; one process; complete records <=131072 tokens, no truncation; no generation; saved calibration, no test fitting | 50.75; 140178 requests, complete=true | 0 unsupported; latency median 55.9 ms, mean 126.6 ms, p80 117.8 ms |
